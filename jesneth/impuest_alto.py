@@ -1,3 +1,4 @@
+
 # 1. Instalacón de la biblioteca pandas 
 # Importación de la biblioteca, junto con su alias ya que éste es el que nos va a permitir el análisis de datos tabulares 
 import pandas as pd 
@@ -16,4 +17,5 @@ impuestos = inmuebles.groupby('Tipo')['Impuesto'].mean()
 
 
 print(impuestos)
+
 
