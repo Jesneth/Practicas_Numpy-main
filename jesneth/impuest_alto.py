@@ -12,10 +12,13 @@ inmuebles = pd.read_csv(url, sep=';')
 # El uso de "sep=';'" es para que separe la informacián con un punto y coma. 
 
 
-# Imprimir los impuestos más altos del DataFrame "Inmuebles"
+# Imprimir el promedio de los impuestos más altos del DataFrame "Inmuebles"
 impuestos = inmuebles.groupby('Tipo')['Impuesto'].mean()
 
+# Ordenar de forma ascendente
+impuestos_ordenados = impuestos.sort_values(ascending=False)
 
-print(impuestos)
+
+print(impuestos_ordenados)
 
 
